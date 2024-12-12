@@ -1,0 +1,302 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.meni {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.meni ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.meni li {
+    position: relative;
+}
+
+.meni a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.meni a:hover {
+    color: #007BFF;
+}
+
+.zaglavlje {
+    text-align: center;
+    padding: 100px 20px;
+    color: #ffffff;
+    background: url('image/zemlja.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.zaglavlje h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 20px 0;
+    color: #007BFF;
+}
+
+.dobrodoslica p {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.izaberi {
+    text-align: center;
+    padding: 20px;
+}
+
+.destinacija {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.destinacija:hover {
+    transform: scale(1.05);
+}
+
+.destinacija img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .meni ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .meni a {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+.stranica-destinacije {
+    background-color: #f9f9f9;
+}
+
+.naslov-stranice {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #007BFF;
+}
+
+.drzava {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.drzava:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.tekst {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.tekst h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.tekst p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.tekst h3 a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.tekst h3 a:hover {
+    color: #0056b3;
+}
+
+.slika {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slika img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .drzava {
+        flex-direction: column;
+    }
+
+    .tekst {
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+body.forma {
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+}
+.forma-div {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.formaa {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formaa input[type="radio"],
+.formaa input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.formaa-radio,
+.formaa-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.formaa-radio label,
+.formaa-checkbox label {
+    margin: 0;
+    margin-left: 0.5rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: #f77f00;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #d66000;
+}
+
+@media (max-width: 768px) {
+    body.forma {
+        font-size: 0.9rem;
+    }
+
+    .forma-div {
+        padding: 1.5rem; 
+        top: 20px; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    input[type="number"] {
+        font-size: 0.9rem; 
+    }
+
+    button {
+        font-size: 0.9rem; 
+    }
+}

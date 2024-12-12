@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma za Putovanje</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="forma">
+    <nav class="meni">
+        <ul>
+            <li><a href="../index.html">Početna</a></li>
+            <li><a href="destinacije.html">Destinacije</a></li>            
+            <li><a href="#">Rezerviši</a></li>
+        </ul>
+    </nav>
+    <div class="forma-div">
+        <h2>Prijava za Putovanje</h2>
+        <form>
+            <div class="formaa">
+                <label for="ime">Ime:</label>
+                <input type="text" id="ime" name="ime" required>
+            </div>
+            <div class="formaa">
+                <label for="prezime">Prezime:</label>
+                <input type="text" id="prezime" name="prezime" required>
+            </div>
+            <div class="formaa">
+                <label for="email">Mejl:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="formaa">
+                <label for="telefon">Broj Telefona:</label>
+                <input type="tel" id="telefon" name="telefon" required>
+            </div>
+            <div class="formaa">
+                <label for="destinacija">Destinacija:</label>
+                <select id="destinacija" name="destinacija" required>
+                    <option value="italija">Italija</option>
+                    <option value="francuska">Francuska</option>
+                    <option value="spanija">Španija</option>
+                </select>
+            </div>
+            <div class="formaa">
+                <label for="dan">Dan (1-31):</label>
+                <input type="number" id="dan" name="dan" min="1" max="31" required>
+            </div>
+            <div class="formaa-radio">
+                <label>Pol:</label>
+                <input type="radio" id="musko" name="pol" value="musko" required>
+                <label for="musko">Muško</label>
+                <input type="radio" id="zensko" name="pol" value="zensko">
+                <label for="zensko">Žensko</label>
+            </div>
+            <div class="formaa">
+                <label for="osobe">Broj osoba (1-5):</label>
+                <input type="number" id="osobe" name="osobe" min="1" max="5" required>
+            </div>
+            <div class="formaa-checkbox">
+                <input type="checkbox" id="osiguranje" name="osiguranje">
+                <label for="osiguranje">Da li uzimate putno osiguranje?</label>
+            </div>
+            <button type="submit">Pošalji</button>
+        </form>
+    </div>
+</body>
+</html>
